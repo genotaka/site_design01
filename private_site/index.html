@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.compatibility.js"></script>
+    <script src="vendor/scrollreveal.min.js"></script>
+
+    <script>
+        $(function () {
+            setTimeout(function () {
+                $("#loading_title").animate({opacity: 1}, 1000, 'swing')
+            }, 1000);
+        });
+
+        // ローディングアニメーション
+        var $delayTime = 2000;
+
+        $(window).on('load', function () {
+            var $loadingAnim = $('#loadingAnim'),
+                $body = $('body');
+            setTimeout(function () {
+                $body.addClass('loaded');
+                $loadingAnim.find('.loadingAnim_line').on('transitionend', function (e) {
+                    $('#loadingAnim').remove();
+                });
+            }, $delayTime);
+        });
+    </script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('.animate', { easing: 'ease', duration: 2000, distance: '400px', opacity: 1, scale: 1 });
+    </script>
+</head>
+
+<body>
+<div id="loadingAnim" class="loadingAnim">
+    <div class="loadingAnim_line">
+        <h1 id="loading_title" class="myWebFontClass">
+            Ai Ohkawara
+        </h1>
+    </div>
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+</div>
+
+
+
+<div id="wrapper">
+    <div id="btnMenu" class="target action"><a class="menu-trigger" href="javascript:void(0)">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a></div>
+
+    <nav id="globalNavi" class="lato target action">
+        <ul>
+            <li><a href="#works" class="scroll">WORKS</a></li>
+            <li><a href="#information" class="scroll">INFORMATION</a></li>
+            <li><a href="#biography" class="scroll">BIOGRAPHY</a></li>
+            <li><a href="#contact" class="scroll">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo">Ai Ohkawara 大河原 愛</div>
+
+    <nav id="btnPagetop" class="lato"><a href="#wrapper" class="scroll">TOP</a></nav>
+
+    <section id="mv">
+        <div class="inner animate">
+            <h1><span><img src="material/img/logo_metoa.svg" alt="image"></span></h1>
+            <p>
+                私は、様々な素材と表現方法を用いながら、人間の精神の暗部や不安定さをあぶり出すために「視覚を刺激する装置」として美術を捉え、作品の制作を続けています。
+                ニーチェは「事実などというものはない。あるのは解釈だけである」と述べています。私たちが事実や現実と捉えているもの（解釈しているもの）は、本当にそこに存在したり、真理であったりするのでしょうか。自分たちが正義や不義と信じているものは、思想の違う他者にとってもその通り正義や不義であるのでしょうか。
+                古びたアンティークの額や写真を用いた半立体のオブジェやコラージュでは、特殊な光学フィルムを用いて、実際に在る物を屈折させて見せています。「見え方のブレ」を取り入れた作品は、見る人の記憶や深層心理を刺激し、日常、目にするモノやコトに対する認識の偏向性を暗示しています。また、油彩やコラージュの作品においても、一部は絵を覆うアクリル額の上にも描写してイメージを二層にして見せたりするなど、視覚へ刺激を与えるような美術を目指し研究しています。
+                ハイデッガーは名高い芸術論『芸術作品の根源』において、芸術とは、いわば真理を開示させる行為である。つまり、「芸術とは閉じられていた真理を露出させ、突出させることだ」と述べていますが、私は、そこに共感を覚えています。
+                幼少期、私は平和の重要性を伝えようとした両親により、戦争の被害者や惨状の写真を見せられました。写真の中の情景が一部心の傷となって残り、やがて人間の精神の暗部や不安定さをあぶりだすような作品の制作に没頭するようになりました。多角的な視点を持つことが多くのバイアスを解く鍵になると信じ、不安感漂う今の時代に生きる多くの人に偏った思想や固定観念によって物事を捉えることの危険性などを、作品を通じて提示していきたいと考えています。
+
+                <!--{en}My art reveals the inner darkness and anxiety of human beings by stimulating our visual sense through various means of media and expression.
+                Does what we perceive as factual and real truly exist? How much do our views of what de nes justice and injustice contrast from those with di erent perspectives? By in icting lights using optical lms onto objects such as antique photograph frames and collages, my art illuminates a variety of views. Such pieces of work provoke the viewer’s recollection and deep psyche, implying our biased perception toward what we see on a daily basis. Through oil paintings and collage I place a layer of acrylic resin over the work to create a sense of double layer, further stimulating the visual senses.
+                In my childhood, my parents tried to teach me the importance of peace by
+                showing me the pictures of victims and devastating scenes of war. Perhaps it was through this exposure that I started to examine the human condition and I was driven to explore the darker side of being human and the sense of suffocation that stems from the oppression in our society.
+                I believe that obtaining a multifaceted view is key to solving bias perceptions. Through my art, I strive to expose the struggle that others fight as they try to break free of the constraints placed on them by society ; the risk of having a singular perspective ; and the internal struggle of life.-->
+            </p>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="inner">
+            <h2 class="sec_title lato target action">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h2>
+            <div class="txt">
+                <h3 class="bdr_title lato target action">WORKS</h3>
+                <p class="target action">テキストテキストテキストテキストテキストテキスト</p>
+                <div class="btn lato target action"><a href="#" target="_blank">button</a></div>
+            </div>
+            <div class="img">
+                <div class="mask_img img1"><img src="img/obj_5.jpg" alt=""></div>
+                <div class="mask_img img2"><img src="img/obj_6.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="information">
+        <div class="inner">
+            <div class="txt">
+                <h3 class="bdr_title lato target action">INFORMATION</h3>
+                <div class="btn lato target action"><a href="#" target="_blank">button</a></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="biography">
+        <div class="inner">
+            <div class="animate">アニメーションする要素</div>
+            <h2 class="sec_title lato target animate">BIOGRAPHY</h2>
+            <div class="txt">
+                <h3 class="bdr_title lato target action"></h3>
+                <div class="column">
+                    <div class="left box">
+                        <p class="lato normal target action">
+                            texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+                        </p>
+                    </div>
+                    <div class="right box">
+                        <p class="target action">
+                            テキストテキストテキストテキストテキストテキスト
+                        </p>
+                        <div class="btn lato blank target action"><a href="material/pdf/metoa_menu.pdf" target="_blank">button</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="inner">
+            <h2 class="bdr_title lato target action">CONTACT</h2>
+            <div class="column">
+                <div class="txt">
+                    <p class="read target action"></p>
+                    <div class="detail">
+                        <dl class="box info lato normal target action">
+                            <dt>mail</dt>
+                            <dd>exsample@hogehoge.com</dd>
+                            <dt>phone</dt>
+                            <dd>080-xxxxx-xxxx</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="globalFooter">
+        <div class="row justify-content-md-center">
+            <div class="col-1">
+                    <a href="#" target="_blank"><i class="fab fa-4x fa-instagram"></i></a>
+            </div>
+            <div class="col-1">
+                <a href="W" target="_blank"><i class="fab fa-4x fa-facebook-square"></i></a>
+            </div>
+        </div>
+        <small class="copyright">© 2018 Ai Ohkawara</small>
+    </footer>
+</div>
+
+</body>
+</html>
